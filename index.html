@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Matching Game</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎭 MEME MATCHING GAME</h1>
+            <p class="instructions">
+                Welcome to the ultimate meme matching challenge! Flip cards to find matching pairs. 
+                Test your memory and speed – can you match them all?
+            </p>
+        </div>
+
+        <div class="game-controls">
+            <button id="start-game" class="btn btn-primary">Start Game</button>
+            <button id="reset-game" class="btn btn-secondary game-hidden">Reset Game</button>
+        </div>
+
+        <div id="game-stats" class="game-stats game-hidden">
+            <div class="stat-item">
+                <span id="moves-count" class="stat-value">0</span>
+                <span class="stat-label">Moves</span>
+            </div>
+            <div class="stat-item">
+                <span id="matches-count" class="stat-value">0</span>
+                <span class="stat-label">Matches</span>
+            </div>
+            <div class="stat-item">
+                <span id="timer" class="stat-value">00:00</span>
+                <span class="stat-label">Time</span>
+            </div>
+        </div>
+
+        <div id="game-board" class="game-board game-hidden">
+            <!-- Cards will be generated here -->
+        </div>
+
+        <div id="success-message" class="success-message">
+            <h2>🎉 Congratulations!</h2>
+            <p>You found all the matches!</p>
+            <button id="play-again" class="btn btn-primary" style="margin-top: 20px;">Play Again</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
